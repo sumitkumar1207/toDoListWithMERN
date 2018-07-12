@@ -60,7 +60,7 @@ class ItemModal extends Component {
           Add Items
         </Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Add To Shopping List </ModalHeader>
+          <ModalHeader toggle={this.toggle}>Add To ToDo List </ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
@@ -69,10 +69,10 @@ class ItemModal extends Component {
                   type="text"
                   name="name"
                   id="item"
-                  placeholder="Add Shopping Item"
+                  placeholder="Add ToDo Item"
                   onChange={this.onChange}
                 />
-                {this.state.showError ? <p>Please Enter Something</p>:null}
+                {this.state.showError ? <p>Please Enter your ToDo item</p>:null}
                 <Button color="dark" style={{ marginTop: "2rem" }} block>
                   Add Item
                 </Button>
